@@ -203,26 +203,6 @@
 
         <div class="w-full space-y-3.5">
 
-            <a href="https://linkedin.com/in/sepansarr" target="_blank" rel="noopener noreferrer" 
-               class="group cyber-card p-4 rounded-xl flex items-center justify-between">
-                <div class="flex items-center gap-4">
-                    <div class="w-12 h-12 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-xl group-hover:scale-110 group-hover:bg-blue-500/20 group-hover:border-blue-500/50 transition-all duration-300 shadow-[0_0_15px_rgba(59,130,246,0.1)]">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <div class="text-left" id="link-li-text-wrap">
-                        <div class="flex items-center gap-2">
-                            <span class="font-bold text-sm text-slate-100 group-hover:text-blue-400 transition-colors" id="link-li-title">LinkedIn Profile</span>
-                            <span class="text-[9px] font-mono bg-blue-950/60 text-blue-300 border border-blue-500/30 px-1.5 py-0.5 rounded">NETWORK</span>
-                        </div>
-                        <p class="text-xs text-slate-400 font-mono mt-0.5 dir-ltr">linkedin.com/in/sepansarr</p>
-                    </div>
-                </div>
-                <div class="text-slate-600 group-hover:text-blue-400 font-mono text-xs flex items-center gap-1.5 transition-colors px-2">
-                    <span class="hidden sm:inline text-[10px] text-slate-500 group-hover:text-slate-400">[CONNECT]</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                </div>
-            </a>
-
             <a href="https://github.com/sepansarr" target="_blank" rel="noopener noreferrer" 
                class="group cyber-card p-4 rounded-xl flex items-center justify-between">
                 <div class="flex items-center gap-4">
@@ -443,7 +423,6 @@
                 switchLabel: 'FA',
                 buttonFlag: flagIranLionSun,
                 headerStatus: 'ONLINE // READY',
-                liTitle: 'LinkedIn Profile',
                 ghTitle: 'GitHub Repositories',
                 tgTitle: 'Telegram Channel',
                 ytTitle: 'YouTube Channel',
@@ -458,7 +437,6 @@
                 switchLabel: 'EN',
                 buttonFlag: flagUK,
                 headerStatus: 'آنلاین // در دسترس',
-                liTitle: 'پروفایل لینکدین',
                 ghTitle: 'مخازن گیت‌هاب',
                 tgTitle: 'کانال تلگرام',
                 ytTitle: 'کانال یوتیوب',
@@ -489,7 +467,6 @@
             document.getElementById('lang-flag-icon').innerHTML = data.buttonFlag;
             document.getElementById('header-status').textContent = data.headerStatus;
 
-            document.getElementById('link-li-title').textContent = data.liTitle;
             document.getElementById('link-gh-title').textContent = data.ghTitle;
             document.getElementById('link-tg-title').textContent = data.tgTitle;
             document.getElementById('link-yt-title').textContent = data.ytTitle;
@@ -499,7 +476,7 @@
             document.getElementById('about-badge').innerHTML = data.aboutBadge;
             document.getElementById('about-text').innerHTML = data.aboutText;
 
-            const textWrappers = ['link-li-text-wrap', 'link-gh-text-wrap', 'link-tg-text-wrap', 'link-yt-text-wrap', 'link-ig-text-wrap', 'link-x-text-wrap'];
+            const textWrappers = ['link-gh-text-wrap', 'link-tg-text-wrap', 'link-yt-text-wrap', 'link-ig-text-wrap', 'link-x-text-wrap'];
             textWrappers.forEach(id => {
                 const el = document.getElementById(id);
                 if (el) {
