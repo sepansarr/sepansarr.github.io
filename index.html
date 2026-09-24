@@ -150,7 +150,7 @@
             </div>
             <button onclick="toggleLang()" class="hud-border px-3.5 py-1.5 rounded-lg text-xs font-mono font-bold tracking-wider hover:border-cyan-400 transition-all flex items-center gap-2">
                 <span id="lang-flag-icon" class="flex items-center"></span>
-                <span id="lang-switch-text" class="text-slate-300 text-[11px]">IR</span>
+                <span id="lang-switch-text" class="text-slate-300 text-[11px]">FA</span>
             </button>
         </div>
     </header>
@@ -376,19 +376,10 @@
             if (el) el.textContent = ping + 'ms';
         }, 3000);
 
-        const flagIranLionSun = `
-            <svg class="w-5 h-3.5 rounded-[2px] shadow-sm overflow-hidden" viewBox="0 0 24 16">
-                <rect width="24" height="5.33" fill="#239f40"/>
-                <rect y="5.33" width="24" height="5.34" fill="#ffffff"/>
-                <rect y="10.67" width="24" height="5.33" fill="#da0000"/>
-                <circle cx="12" cy="7.2" r="2.2" fill="#eab308"/>
-                <path d="M9.5 9.2 Q11 6.8 14.5 9.2 Q13.5 6.5 12 6.5 Q10.5 6.5 9.5 9.2 Z" fill="#ca8a04"/>
-                <path d="M14 7.2 L15.6 6.8 L14.4 8 Z" fill="#854d0e"/>
-            </svg>
-        `;
+        const flagIranCustom = `<img src="flag-of-iran-emoji-toss-face.svg" alt="ایران" class="w-4 h-4 object-contain rounded-[2px]">`;
 
         const flagUK = `
-            <svg class="w-5 h-3.5 rounded-[2px] shadow-sm overflow-hidden" viewBox="0 0 60 30">
+            <svg class="w-4 h-3 rounded-[2px] shadow-sm overflow-hidden" viewBox="0 0 60 30">
                 <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
                 <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
                 <g clip-path="url(#s)">
@@ -421,7 +412,7 @@
                 dir: 'ltr',
                 font: 'font-sans',
                 switchLabel: 'FA',
-                buttonFlag: flagIranLionSun,
+                buttonFlag: flagIranCustom,
                 headerStatus: 'ONLINE // READY',
                 ghTitle: 'GitHub Repositories',
                 tgTitle: 'Telegram Channel',
